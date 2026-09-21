@@ -28,7 +28,7 @@ export default function AcademicTimeline() {
             <p className="label-kicker">02 / Academic Foundations</p>
             <span className="hidden sm:inline-flex items-center gap-1.5 font-mono text-[10px] text-[#801232]/70 bg-white/80 px-2.5 py-0.5 rounded-full border border-[#fae5eb] shadow-xs">
               <Activity size={10} className="text-[#801232] animate-pulse" />
-              <span>Synaptic Neural Graph · Signal Harmonics</span>
+              <span></span>
             </span>
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-[56px] text-[#801232] tracking-tight leading-tight max-w-xl">

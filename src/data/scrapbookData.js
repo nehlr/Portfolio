@@ -180,16 +180,16 @@ export const scrapbookData = {
     {
       degree: "M.S. in Artificial Intelligence",
       institution: "La Salle Campus Barcelona — Universitat Ramon Llull",
-      period: "October 2026 – June 2027",
+      period: "2026 — 2027",
       location: "Barcelona, Spain",
-      note: "Focusing on Machine Learning, Computer Vision, Local RAG Architectures, and Signal Processing."
+      note: "Specializing in Machine Learning, Big Data Management, Computer Vision, Natural Language Processing, Deep Learning, and Autonomous Systems."
     },
     {
       degree: "B.S. in Computer Engineering",
       institution: "Işık University",
-      period: "2021 – 2025",
+      period: "2022 — 2026",
       location: "Istanbul, Turkey",
-      note: "Focused on Software Engineering, Data Structures, Signal Processing, and Applied Machine Learning."
+      note: "Focus on Software Engineering, Data Structures, Agentic AI Development, AWS Cloud Solutions, and Digital Transformation."
     }
   ]
 };

@@ -182,14 +182,14 @@ export const portfolioData = {
     {
       degree: "M.S. in Artificial Intelligence",
       institution: "La Salle Campus Barcelona — Universitat Ramon Llull",
-      period: "2025 — Present",
-      details: "Specializing in Machine Learning, Computer Vision, RAG Architectures, and Autonomous Systems."
+      period: "2026 — 2027",
+      details: "Specializing in Machine Learning, Big Data Management Computer Vision, Natural Language Processing,Deep Learning, and Autonomous Systems."
     },
     {
       degree: "B.S. in Computer Engineering",
       institution: "Işık University",
-      period: "2021 — 2025",
-      details: "Focus on Software Engineering, Data Structures, Signal Processing, and Applied Machine Learning."
+      period: "2022 — 2026",
+      details: "Focus on Software Engineering, Data Structures, Agentic AI Development, AWS Cloud Solutions Digital Transformation ."
     }
   ],
 
