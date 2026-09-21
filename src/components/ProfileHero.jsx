@@ -241,17 +241,17 @@ export default function ProfileHero() {
 
             {/* Body Copy */}
             <p className="font-sans text-[14px] text-[#57534e] leading-relaxed max-w-sm mx-auto lg:mx-0">
-              Specializing in Retrieval-Augmented Generation (RAG) architectures
-              leveraging Microsoft Foundry Local, real-time OpenCV computer vision, and
-              signal processing analytics presented at IEEE SIU 2026.
+              As an AI-focused computer engineer, I combine analytical rigor with thoughtful interface design to deliver impactful digital experiences.
+              Beyond writing efficient code and developing machine learning solutions, I thrive in collaborative environments,
+              leading student initiatives, organizing large-scale tech events, and driving projects from concept to execution.
             </p>
 
             {/* Skill tags */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1.5 mt-5">
               {[
                 { icon: <Brain size={11} />, label: 'Local RAG & LLMs' },
-                { icon: <Cpu size={11} />, label: 'Computer Vision' },
-                { icon: <Layers size={11} />, label: 'Full-Stack React' },
+                { icon: <Cpu size={11} />, label: 'Data Science' },
+                { icon: <Layers size={11} />, label: 'Full-Stack Development' },
               ].map(({ icon, label }) => (
                 <span
                   key={label}

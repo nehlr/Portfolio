@@ -28,7 +28,7 @@ export default function ScrapbookContact() {
         origin: { y: 0.7 },
         colors: ['#801232', '#f472b6', '#fce7ef', '#ffffff'],
       });
-    } catch (_) {}
+    } catch (_) { }
   };
 
   return (
@@ -64,7 +64,7 @@ export default function ScrapbookContact() {
             />
           </h2>
           <p className="font-sans text-base text-[#57534e] leading-relaxed max-w-md mx-auto mt-6">
-            Open for full-stack engineering roles, RAG/AI development, and research collaborations — in Barcelona and internationally.
+            Open for full-stack engineering roles and AI development in Barcelona.
           </p>
         </div>
 

@@ -26,9 +26,7 @@ export default function WorkExperienceSection() {
               textColor="#801232"
             />
           </h2>
-          <p className="font-sans text-base text-[#57534e] leading-relaxed max-w-lg mt-5">
-            Engineering RAG applications, scientific research, and industrial computer vision solutions across industry and academia.
-          </p>
+
         </div>
 
         {/* 2-column card grid — spacious inverted maroon cards */}

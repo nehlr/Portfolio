@@ -66,8 +66,7 @@ export const scrapbookData = {
       rotationClass: "-rotate-1",
       description: "Participated in an intensive hands-on training camp focused on AI-driven threat intelligence, deep neural network intrusion detection models, and ethical cyber defense simulations.",
       highlights: [
-        "Trained AI anomaly detection classifiers with 96.4% precision",
-        "Engaged in 48-hour continuous security coding sprint"
+        "Engaged in 4 days continuous security coding sprint and built network."
       ],
       tags: ["Artificial Intelligence", "Cybersecurity", "Deep Learning"]
     },
@@ -81,8 +80,7 @@ export const scrapbookData = {
       rotationClass: "rotate-2",
       description: "Engineered an interactive satellite data visualization and orbital mechanics prediction system using NASA open telemetry datasets and Keplerian orbital trajectory models.",
       highlights: [
-        "Built PyTorch trajectory prediction pipelines",
-        "Designed vintage editorial telemetry dashboard for team showcase"
+        "Built PyTorch trajectory prediction pipelines"
       ],
       tags: ["NASA Open API", "Orbital Mechanics", "Python"]
     },
@@ -94,9 +92,8 @@ export const scrapbookData = {
       image: "/assets/events/isik_tech_summit.jpg",
       polaroidCaption: "Işık Tech Summit '25",
       rotationClass: "-rotate-2",
-      description: "Co-organized and presented at Işık University's flagship technology conference, delivering presentations on generative AI, autonomous robotics, and modern software architecture.",
+      description: "I served on the organizing committee and acted as the Master of Ceremonies (MC) for the Işık University Technology Summit. The conference brought together approximately 500 attendees and featured keynote addresses from six prominent business leaders.",
       highlights: [
-        "Hosted panel on Ethical Machine Learning in Society",
         "Managed conference logistics for 500+ attendees"
       ],
       tags: ["Generative AI", "Tech Conference", "Leadership"]
@@ -124,7 +121,7 @@ export const scrapbookData = {
       image: "/assets/events/isikwinter.JPG",
       polaroidCaption: "Işık Winter App '25",
       rotationClass: "-rotate-1",
-      description: "Designed and built a web-based festive Secret Santa gift exchange application serving 1,200+ university students with automated matching algorithms and wishlist features.",
+      description: "Designed and built a web-based festive Secret Santa gift exchange application serving 1,200+ university students with automated matching algorithms and wishlist features with my team.",
       highlights: [
         "Implemented zero-collision Secret Santa assignment algorithm",
         "Created cozy winter holiday-themed React interface"
@@ -139,7 +136,7 @@ export const scrapbookData = {
       image: "/assets/events/siu2.jpg",
       polaroidCaption: "34th IEEE SIU Congress '26",
       rotationClass: "rotate-1",
-      description: "Presented a co-authored scientific research paper with my engineering team at the 34th IEEE SIU 2026 Congress, demonstrating advanced data visualization methodologies and signal processing analytics.",
+      description: "Presented a co-authored scientific research paper with my team at the 34th IEEE SIU 2026 Congress, demonstrating advanced data visualization methodologies and signal processing analytics.",
       paperUrl: "https://ieeexplore.ieee.org/document/11636655",
       highlights: [
         "Co-authored peer-reviewed research paper presented with engineering team at 34th IEEE SIU 2026",
@@ -155,9 +152,8 @@ export const scrapbookData = {
       image: "/assets/events/isik_communications.jpg",
       polaroidCaption: "Corporate Communications '24–'26",
       rotationClass: "-rotate-1",
-      description: "Represented Işık University as a Student Ambassador during summer promotional campaigns from 2024 to 2026.",
+      description: "Served as a Student Ambassador for Işık University across both academic semesters and summer promotional periods from 2024 to 2026.",
       highlights: [
-        "Represented Işık University as a Student Ambassador during summer promotional campaigns from 2024 to 2026",
         "Delivered university presentations and guidance to prospective engineering students and families"
       ],
       tags: ["Student Ambassador", "Communications", "Public Relations"]
@@ -170,9 +166,9 @@ export const scrapbookData = {
       image: "/assets/events/runclub.jpg",
       polaroidCaption: "Işık Run Club Leader '26",
       rotationClass: "rotate-2",
-      description: "Organized weekly training runs to foster community engagement among students and alumni from January 2026 to September 2026.",
+      description: "As the Founder and President of the Işık Run Club, I established a dynamic athletic community from the ground up, directing weekly training sessions and promoting active lifestyle habits among university students from January 2026 to September 2026.",
       highlights: [
-        "Organized weekly training runs to foster community engagement among students and alumni from January 2026 to September 2026",
+        "Organized weekly training runs to foster community engagement among students and alumni",
         "Fostered an active campus athletic culture and cross-departmental alumni networking"
       ],
       tags: ["Leadership", "Community Engagement", "Athletics"]
