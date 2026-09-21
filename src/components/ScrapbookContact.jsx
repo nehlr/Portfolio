@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Check, Copy, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, Check, Copy, ArrowRight, Loader2 } from 'lucide-react';
 import { Github, Linkedin } from './Icons';
 import confetti from 'canvas-confetti';
 import { scrapbookData } from '../data/scrapbookData';
@@ -8,6 +8,8 @@ import TextPressure from './TextPressure';
 export default function ScrapbookContact() {
   const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const { profile } = scrapbookData;
 
@@ -17,18 +19,48 @@ export default function ScrapbookContact() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) return;
-    setSubmitted(true);
+    if (!form.name || !form.email || !form.message || isSubmitting) return;
+
+    setIsSubmitting(true);
+    setSubmitError(null);
+
     try {
-      confetti({
-        particleCount: 50,
-        spread: 60,
-        origin: { y: 0.7 },
-        colors: ['#801232', '#f472b6', '#fce7ef', '#ffffff'],
+      const response = await fetch(`https://formsubmit.co/ajax/${profile.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _subject: `New Portfolio Message from ${form.name}`,
+        }),
       });
-    } catch (_) { }
+
+      const data = await response.json();
+      // FormSubmit returns success: "true" (or sends activation on first request)
+      if (data.success === 'true' || response.ok) {
+        setSubmitted(true);
+        try {
+          confetti({
+            particleCount: 50,
+            spread: 60,
+            origin: { y: 0.7 },
+            colors: ['#801232', '#f472b6', '#fce7ef', '#ffffff'],
+          });
+        } catch (_) { }
+      } else {
+        setSubmitError(data.message || 'Something went wrong. Please try again or email directly.');
+      }
+    } catch (err) {
+      setSubmitError('Unable to send message right now. Please reach out via email directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -182,8 +214,26 @@ export default function ScrapbookContact() {
                   />
                 </div>
 
-                <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2">
-                  Send Message <ArrowRight size={14} />
+                {submitError && (
+                  <p className="text-xs text-[#801232] bg-[#fae5eb] border border-[#f4c2d0] rounded-sm px-3.5 py-2.5 leading-relaxed">
+                    {submitError}
+                  </p>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="btn-primary w-full flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 size={14} className="animate-spin" /> Sending Message...
+                    </>
+                  ) : (
+                    <>
+                      Send Message <ArrowRight size={14} />
+                    </>
+                  )}
                 </button>
               </form>
             )}
